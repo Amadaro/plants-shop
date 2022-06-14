@@ -1,6 +1,12 @@
 .homepage-image {
+  position: absolute;
   width: 557px;
   height: 719px;
+}
+
+.homepage-image-box  {
+  display: flex;
+  justify-content: right;
 }
 
 .homepage-block-one h1 {
@@ -15,7 +21,7 @@
     margin-bottom: 40px;
   }
 .homepage-block-one {
-    margin-top: 52px;
+    padding-top: 52px;
 }
 
 .button.button-learn {
@@ -32,6 +38,12 @@
 .homepage {
     margin-bottom: 80px;
 }
+.backgroundpic {
+  left:30%;
+  bottom: 30%;
+  z-index: -1;
+  position: absolute;
+}
 
 * p {
   font-family: "DM Sans";
@@ -45,3 +57,9 @@
 .body {
     background: #ECECEC;
 }
+
+.nav-item {
+  display: flex;
+  align-items: center; 
+}
+

@@ -1,0 +1,71 @@
+.followUsGallery img{
+    width: 230px;
+    height: 240px;
+}
+
+.container.collection{
+    padding: 0px;
+}
+.collection-item {
+    width: 215px;
+    height: 207px;
+    margin: 12px;
+    margin-bottom: 0px;
+  display: flex;
+  justify-content: center;  
+}
+
+
+.collection-img {
+    margin: 20px;
+    padding: 0;
+}
+
+.collection-item-one,  .collection-item-three {
+    background-color: #F6EDE8;
+}
+
+.collection-item-two {
+    background-color: #F0F1F6;
+}
+
+.collectionDescription {
+    margin-right: 62px;
+}
+
+.collection {
+    margin-bottom: 128px;
+}
+
+.collectionDescription {
+    display: flex;
+  flex-wrap: wrap;
+  place-content: space-between;
+  
+    
+}
+.seeAll {
+    justify-content: end;
+}
+
+.seeAllLink {
+    position:relative;
+    font-size: 18px;
+    color: #4A4A4A;
+    text-decoration: none;
+}
+
+.seeAllLink::before {
+    content: "\2192";
+  position: absolute;
+  left: 135px;
+  color: #4A4A4A;
+  top: 0;
+}
+.seeAllLink:hover, .seeAllLink:hover::before {
+    color:rgb(57, 57, 176)
+}
+
+.aboutAs {
+    color: #066F14;
+}

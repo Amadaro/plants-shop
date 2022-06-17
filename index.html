@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Plants</title>
   </head>
   <body class="body">
@@ -121,30 +127,30 @@
 
     <div class="container about">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 aboutUsPic-Box">
+          <div class="aboutUsPicBG"></div>
           <img
-            src="/assets/css/image/jest.jpg"
+            class="aboutUsPic"
+            src="/assets/css/image/aboutuspic.png"
             alt="tree"
             height="440"
             width="446"
           />
         </div>
-        <div class="col-md-6 aboutAs">
+        <div class="col-md-5 aboutUs">
           <h6>About Us</h6>
           <h1 class="about-header">
             Continue to Develop to<br />Became Global Company
           </h1>
-          <p class="about-pone">
+          <p class="about-part-one">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             tenetur odit voluptates voluptatum impedit porro eius at in magnam
             ut voluptate quas iusto voluptatibus nihil, aspernatur molestiae
-            quibusdam doloribus, dolores, adipisci id consectetur. Temporibus
-            quisquam, et eveniet sed quibusdam expedita mollitia totam
-            exercitationem nihil fugit quia fugiat id cum dolorum.
+            quibusdam doloribus, dolores, adipisci id consectetur.
           </p>
-          <p class="about-ptwo">
+          <p class="about-part-two">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            delectus, reiciendis officia soluta saepe sunt!
+            delectus, reiciendis saepe sunt!
           </p>
           <button class="button button-readmore">Read More</button>
         </div>
@@ -152,17 +158,11 @@
     </div>
 
     <div class="container products">
-      <div class="row"><h1>Our Best Product</h1></div>
-      <div class="row">
-        <div class="col-2">
-          <a class="filter-item" href="#">New Plants</a>
-        </div>
-        <div class="col-2">
-          <a class="filter-item" href="#">New Arrivals</a>
-        </div>
-        <div class="col-2">
-          <a class="filter-item" href="#">Sale</a>
-        </div>
+      <div class="row products-header"><h1>Our Best Product</h1></div>
+      <div class="column products-filter">
+        <a class="filter-item filter-current" href="#">New Plants</a>
+        <a class="filter-item" href="#">New Arrivals</a>
+        <a class="filter-item" href="#">Sale</a>
       </div>
       <div class="row">
         <div class="col-lg-3 product-one">

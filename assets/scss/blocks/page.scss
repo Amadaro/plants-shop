@@ -65,6 +65,142 @@
   color: rgb(57, 57, 176);
 }
 
-.aboutAs {
+/* Collection */
+
+.collection {
+  padding: 0px;
+  margin-top: 80px;
+}
+.collection-item {
+  width: 215px;
+  height: 207px;
+  margin: 12px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.collection-img {
+  margin: 20px;
+  padding: 0;
+}
+
+.collection-item-one,
+.collection-item-three {
+  background-color: #f6ede8;
+}
+
+.collection-item-two {
+  background-color: #f0f1f6;
+}
+
+.collectionDescription {
+  margin-right: 62px;
+}
+
+.collection {
+  margin-bottom: 128px;
+}
+
+.collectionDescription {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: space-between;
+}
+.seeAll {
+  justify-content: end;
+}
+
+.seeAllLink {
+  position: relative;
+  font-size: 18px;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+.seeAllLink::before {
+  content: "\2192";
+  position: absolute;
+  left: 135px;
+  color: #4a4a4a;
+  top: 0;
+}
+.seeAllLink:hover,
+.seeAllLink:hover::before {
+  color: rgb(57, 57, 176);
+}
+
+/* Abouts Us */
+
+.aboutUsPicBG {
+  position: absolute;
+  z-index: -1;
+  width: 446px;
+  height: 440px;
+  background-color: #066f14;
+}
+
+.aboutUsPic {
+  margin-left: 70px;
+  margin-top: 40px;
+}
+
+.aboutUs h6 {
+  color: #066f14;
+  padding: 0;
+}
+
+.container .aboutUs {
+  flex-wrap: nowrap;
+  max-width: 504px;
+  margin-bottom: 128px;
+}
+
+.col-md-6.aboutUsPic-Box {
+  margin-right: 56px;
+  max-width: 540px;
+}
+
+.aboutUs .about-part-two {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 160%;
+  color: #4a4a4a;
+
+  margin-bottom: 36px;
+}
+.about-header {
+  margin-bottom: 24px;
+}
+
+/* Product */
+
+.products-header {
+  text-align: center;
+}
+
+.products-filter {
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 48px;
+}
+
+.filter-item {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #000;
+  text-decoration: none;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+.filter-current {
+  color: #066f14;
+}
+.filter-item:hover {
   color: #066f14;
 }

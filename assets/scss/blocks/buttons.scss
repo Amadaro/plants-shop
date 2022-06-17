@@ -16,24 +16,6 @@
   width: 165px;
 }
 
-.homepage-button-one {
-  top: 200px;
-  left: 1235px;
-  position: absolute;
-}
-
-.homepage-button-one::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 165px;
-  width: 120px;
-  height: 18px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-image: url("/assets/css/image/buttonsdlc.svg");
-}
-
 .button.nav-button {
   font-size: 14px;
 }

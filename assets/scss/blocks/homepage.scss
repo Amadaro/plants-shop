@@ -1,10 +1,14 @@
+.header.container {
+  margin-top: 1em;
+}
 .homepage-image {
-  position: absolute;
+  position: relative;
   width: 557px;
   height: 719px;
 }
 
 .homepage-image-box {
+  position: relative;
   display: flex;
   justify-content: right;
 }
@@ -20,6 +24,7 @@
   margin-bottom: 40px;
 }
 .homepage-block-one {
+  position: relative;
   padding-top: 52px;
 }
 
@@ -41,8 +46,8 @@
   margin-bottom: 80px;
 }
 .backgroundpic {
-  left: 30%;
-  bottom: 30%;
+  left: 68%;
+  bottom: 19%;
   z-index: -1;
   position: absolute;
 }
@@ -63,4 +68,59 @@
 .nav-item {
   display: flex;
   align-items: center;
+}
+
+.homepage-button-one {
+  top: 10%;
+  left: 84%;
+  position: absolute;
+}
+
+.homepage-button-one::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 165px;
+  width: 120px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url("/assets/css/image/buttonsdlc.svg");
+}
+
+.homepage-button-two {
+  top: 25%;
+  left: 20%;
+  position: absolute;
+}
+
+.homepage-button-two::before {
+  content: "";
+  position: absolute;
+  transform: rotate(180deg);
+  top: 20px;
+  left: 165px;
+  width: 120px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url("/assets/css/image/buttonsdlc.svg");
+}
+
+.homepage-button-three {
+  top: 80%;
+  left: 85%;
+  position: absolute;
+}
+
+.homepage-button-three::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 165px;
+  width: 120px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url("/assets/css/image/buttonsdlc.svg");
 }

@@ -22,7 +22,7 @@
   <body class="body">
     <header class="header container">
       <div class="row navigation">
-        <div class="col-md-4 nav-item nav-item-icon">Plants</div>
+        <div class="col-md-4 nav-item nav-item-icon">Plant</div>
         <div class="col-md-1 nav-item">Home</div>
         <div class="col-md-1 nav-item">Services</div>
         <div class="col-md-1 nav-item">About Us</div>
@@ -358,7 +358,7 @@
 
     <div class="container container-comments">
       <div class="row comments">
-        <div class="col">
+        <div class="col comments-box">
           <div class="row customers-says">
             <h2>What Our Customers Says</h2>
             <p>
@@ -390,7 +390,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col atworking-image-box">
           <img
             class="atworking-image"
             src="/assets/css/image/atworking.png"
@@ -403,31 +403,29 @@
     </div>
 
     <div class="container subscribe">
-      <div class="row">
-        <div class="col-md-6 subscribe-form">
+      <div class="row subscribe-form">
+        <div class="col-md-8 subscribe-form-input">
           <h1>Subscribe Our Newsletter</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
             explicabo labore corporis asperiores omnis autem?
           </p>
-          <div class="row">
-            <div class="col">
-              <input
-                class="subscribe-input"
-                type="text"
-                placeholder="Enter mail..."
-                name=""
-                id=""
-              />
-            </div>
-            <div class="col">
-              <button class="button subscribe-button">Subscribe</button>
-            </div>
+          <div class="row subscribe-input-form">
+            <input
+              class="subscribe-input"
+              type="text"
+              placeholder="Enter mail..."
+              name=""
+              id=""
+            />
+
+            <button class="button subscribe-button">Subscribe</button>
           </div>
         </div>
-        <div class="col-md-6 subscribe-plant">
+        <div class="col-md-4 subscribe-plant">
           <img
-            src="/assets/css/image/jest.jpg"
+            class="subscribe-plant-image"
+            src="/assets/css/image/subscribeplant.png"
             alt="plant"
             width="262"
             height="356"
@@ -446,31 +444,32 @@
       </div>
       <div class="row followUsGallery">
         <img
-          src="/assets/css/image/jest.jpg"
+          class="instagram-image"
+          src="/assets/css/image/followus1.png"
           alt="cactus1"
           width="230"
           height="240"
         />
         <img
-          src="/assets/css/image/jest.jpg"
+          src="/assets/css/image/followus2.png"
           alt="cactus2"
           width="230"
           height="240"
         />
         <img
-          src="/assets/css/image/jest.jpg"
+          src="/assets/css/image/followus3.png"
           alt="cactus3"
           width="230"
           height="240"
         />
         <img
-          src="/assets/css/image/jest.jpg"
+          src="/assets/css/image/followus4.png"
           alt="cactus4"
           width="230"
           height="240"
         />
         <img
-          src="/assets/css/image/jest.jpg"
+          src="/assets/css/image/followus5.png"
           alt="cactus5"
           width="230"
           height="240"
@@ -479,37 +478,54 @@
     </div>
 
     <footer class="container footer">
-      <div class="row">
-        <div class="col-md-4 footerItem-one">
+      <div class="row footer-flexbox">
+        <div class="col-md-4 footerItem footerItem-one">
           <h4>Plant</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto natus
-            qui assumenda vero soluta ea?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+            inventore consequatur ipsum, adipisci maxime pariatur!
           </p>
-          <button class="button social-button">FaceBook</button>
-          <button class="button social-button">Twitter</button>
-          <button class="button social-button">Instagram</button>
+          <div class="socialButtons">
+            <a class="button social-button social-button-facebook"
+              ><img
+                class="social-image-facebook"
+                src="assets/css/image/socialfacebook.svg"
+                alt="facebookicon"
+            /></a>
+            <a class="button social-button social-button-twitter"
+              ><img
+                class="social-image-twitter"
+                src="assets/css/image/socialtwitter.svg"
+                alt="twittericon"
+            /></a>
+            <a class="button social-button social-button-instagram"
+              ><img
+                class="social-image-twitter"
+                src="assets/css/image/socialinstagram.svg"
+                alt=""
+            /></a>
+          </div>
         </div>
-        <div class="col-md-2 footerItem-two">
+        <div class="col-md-2 footerItem footerItem-two">
           <h4>Navigation</h4>
-          <a>Home<br /></a>
-          <a>About<br /></a>
-          <a>Help & Support<br /></a>
-          <a>Product<br /></a>
+          <a>Home</a>
+          <a>About</a>
+          <a>Help & Support</a>
+          <a>Product</a>
         </div>
-        <div class="col-md-2 footerItem-three">
-          <h4>Navigation</h4>
-          <a>Contact<br /></a>
-          <a>Address<br /></a>
-          <a>Blog<br /></a>
-          <a>About Us<br /></a>
+        <div class="col-md-2 footerItem footerItem-three">
+          <h4>About Us</h4>
+          <a>Contact</a>
+          <a>Address</a>
+          <a>Blog</a>
+          <a>About Us</a>
         </div>
-        <div class="col-md-2 footerItem-four">
-          <h4>Navigation</h4>
-          <a>Coustomers Services<br /></a>
-          <a>FAQs<br /></a>
-          <a>We Are Hiring<br /></a>
-          <a>Returns<br /></a>
+        <div class="col-md-2 footerItem footerItem-four">
+          <h4>Help</h4>
+          <a>Coustomers Services</a>
+          <a>FAQs</a>
+          <a>We Are Hiring</a>
+          <a>Returns</a>
         </div>
       </div>
     </footer>

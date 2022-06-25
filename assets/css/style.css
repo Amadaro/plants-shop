@@ -2387,6 +2387,10 @@ progress {
   padding-top: 52px;
 }
 
+.home-col {
+  text-align: center;
+}
+
 .button.button-learn {
   margin-bottom: 60px;
 }
@@ -2483,11 +2487,6 @@ progress {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-image: url("/assets/css/image/buttonsdlc.svg");
-}
-
-.followUsGallery img {
-  width: 230px;
-  height: 240px;
 }
 
 .container.collection {
@@ -2836,7 +2835,6 @@ progress {
 .customers-says p,
 .customers-says h2 {
   padding-left: 0px;
-  padding-right: 110px;
 }
 
 .customers-says h2 {
@@ -2849,31 +2847,38 @@ progress {
 
 .customers-says {
   margin-bottom: 43px;
-  padding-right: 48px;
 }
 
 .comment-name-title {
   padding: 5px 0px;
 }
 
-.atworking-image {
-  z-index: -1;
-  position: absolute;
-  right: 10%;
-  width: 602px;
-  height: 430px;
+.col.atworking-image-box {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 602px;
 }
 
-.container-comments {
-  margin-bottom: 170px;
+.container.container-comments {
+  width: 1152px;
+  margin-bottom: 200px;
 }
 
 .comments {
+  width: 1250px;
   position: relative;
 }
 
+.col.comments-box {
+  padding-right: 0;
+  margin-right: 40px;
+  max-width: 500px;
+}
+
 .feedback {
-  position: relative;
+  max-width: 600px;
+  position: absolute;
 }
 
 .feedback::after {
@@ -2904,6 +2909,125 @@ progress {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("/assets/css/image/Arrowright.svg");
+}
+
+/* Subscribe Our */
+.container.subscribe {
+  background-color: #dfffe3;
+  max-height: 320px;
+  max-width: 1040px;
+  margin-bottom: 80px;
+}
+
+.col-md-8.subscribe-form-input {
+  margin: 0;
+  padding: 60px;
+  max-width: 600px;
+}
+
+.subscribe-form {
+  justify-content: space-between;
+}
+
+.col-md-4.subscribe-plant {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  padding: 0;
+}
+
+.subscribe-plant-image {
+  position: absolute;
+  bottom: 0;
+}
+
+.row.subscribe-input-form {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0;
+  height: 50px;
+  background-color: #fff;
+}
+
+.row .subscribe-input {
+  size: 300px;
+  border: none;
+  width: 370px;
+}
+
+.subscribe-input:focus {
+  outline: none;
+}
+
+.subscribe-input-form > :last-child {
+  margin-right: 10px;
+}
+
+/* Follow  Us  */
+.followUsGallery {
+  position: relative;
+  justify-content: center;
+  margin-bottom: 130px;
+}
+
+.followUsGallery img {
+  padding: 0;
+  width: 230px;
+  height: 240px;
+}
+
+.followUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.followUsHeader {
+  max-width: 550px;
+  text-align: center;
+}
+
+.instagram-image {
+  position: relative;
+}
+
+.followUsGallery::after {
+  content: "";
+  z-index: 100;
+  position: absolute;
+  width: 230px;
+  height: 241px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url("/assets/css/image/layerinstagram.svg");
+}
+
+/* Footer */
+.footer {
+  margin-bottom: 100px;
+}
+
+.footer-flexbox {
+  justify-content: space-between;
+}
+
+.footer-flexbox > :first-child {
+  justify-self: start;
+  width: 300px;
+  margin-right: 100px;
+}
+
+.footerItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.socialButtons a {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

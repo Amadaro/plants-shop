@@ -20,19 +20,36 @@
     <title>Plants</title>
   </head>
   <body class="body">
-    <header class="header container">
-      <div class="row navigation">
-        <div class="col-md-4 nav-item nav-item-icon">Plant</div>
-        <div class="col-md-1 nav-item">Home</div>
-        <div class="col-md-1 nav-item">Services</div>
-        <div class="col-md-1 nav-item">About Us</div>
-        <div class="col-md-1 nav-item">Blog</div>
-        <div class="col-md-2 nav-item">Contact</div>
-        <div class="col-md-1 nav-item">Login</div>
-        <div class="col-md-1 nav-item">
-          <button class="button nav-button">Sign Up</button>
-        </div>
-      </div>
+    <header class="container header">
+      <a href="#" class="nav-item-logo">Plant</a>
+      <ul>
+        <li>
+          <a href="#" class="nav-item nav-item-home">Home</a>
+        </li>
+        <li>
+          <a href="#" class="nav-item nav-item-services"> Services </a>
+        </li>
+        <li>
+          <a href="#" class="nav-item nav-item-services"> Services </a>
+        </li>
+        <li>
+          <a href="#" class="nav-item nav-item-about"> About Us </a>
+        </li>
+        <li>
+          <a href="#" class="nav-item nav-item-blog">Blog</a>
+        </li>
+        <li>
+          <a href="#" class="nav-item nav-item-contact"> Contact </a>
+        </li>
+        <li>
+          <a href="#" class="nav-item nav-item-login">Login</a>
+        </li>
+        <li>
+          <a href="#" class="nav-item nav-item-button">
+            <button class="button nav-button">Sign Up</button>
+          </a>
+        </li>
+      </ul>
     </header>
 
     <div class="container homepage">
@@ -542,5 +559,12 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
   </body>
 </html>

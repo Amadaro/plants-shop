@@ -15,7 +15,7 @@ header {
 }
 
 header.sticky {
-  background: rgb(10, 80, 2);
+  background: rgb(115, 114, 114, 0.8);
   padding: 10px 15px 15px 15px;
   border-radius: 0px 0px 25px 25px;
 }
@@ -23,6 +23,18 @@ header.sticky {
 header.sticky .nav-item-logo,
 header.sticky ul li a {
   color: #fff;
+}
+
+header ul li a:hover {
+  color: rgb(93, 98, 98);
+  text-decoration: underline;
+  transform: scale(200%);
+}
+
+header.sticky ul li a:hover {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  transform: scale(2);
 }
 
 header .nav-item-logo {
@@ -35,14 +47,17 @@ header .nav-item-logo {
 header ul {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: end;
   margin-bottom: 0;
 }
 
+.menu {
+  width: 50%;
+  justify-content: space-around;
+}
 header ul li {
   position: relative;
-
   list-style: none;
 }
 
@@ -63,10 +78,4 @@ header ul li a {
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
-}
-
-.nav-item {
-}
-
-.header.container {
 }

@@ -45,7 +45,14 @@
         </li>
         <li>
           <a href="#" class="nav-item nav-item-button">
-            <button class="button nav-button">Sign Up</button>
+            <button
+              class="button nav-button login-link"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              href="login.html"
+            >
+              Sign Up
+            </button>
           </a>
         </li>
       </ul>
@@ -459,37 +466,46 @@
         </p>
       </div>
       <div class="row followUsGallery">
-        <img
-          class="instagram-image"
-          src="/assets/css/image/followus1.png"
-          alt="cactus1"
-          width="230"
-          height="240"
-        />
-        <img
-          src="/assets/css/image/followus2.png"
-          alt="cactus2"
-          width="230"
-          height="240"
-        />
-        <img
-          src="/assets/css/image/followus3.png"
-          alt="cactus3"
-          width="230"
-          height="240"
-        />
-        <img
-          src="/assets/css/image/followus4.png"
-          alt="cactus4"
-          width="230"
-          height="240"
-        />
-        <img
-          src="/assets/css/image/followus5.png"
-          alt="cactus5"
-          width="230"
-          height="240"
-        />
+        <div class="instagram-image instagram-image-one">
+          <img
+            src="/assets/css/image/followus1.png"
+            alt="cactus1"
+            width="230"
+            height="240"
+          />
+        </div>
+        <div class="instagram-image instagram-image-two">
+          <img
+            src="/assets/css/image/followus2.png"
+            alt="cactus2"
+            width="230"
+            height="240"
+          />
+        </div>
+        <div class="instagram-image instagram-image-three">
+          <img
+            src="/assets/css/image/followus3.png"
+            alt="cactus3"
+            width="230"
+            height="240"
+          />
+        </div>
+        <div class="instagram-image instagram-image-four">
+          <img
+            src="/assets/css/image/followus4.png"
+            alt="cactus4"
+            width="230"
+            height="240"
+          />
+        </div>
+        <div class="instagram-image instagram-image-five">
+          <img
+            src="/assets/css/image/followus5.png"
+            alt="cactus5"
+            width="230"
+            height="240"
+          />
+        </div>
       </div>
     </div>
 
@@ -546,6 +562,42 @@
       </div>
     </footer>
 
+    <!-- Modal  -->
+    <div
+      class="modal"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- JS  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"

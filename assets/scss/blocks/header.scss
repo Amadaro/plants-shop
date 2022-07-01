@@ -25,10 +25,18 @@ header.sticky ul li a {
   color: #fff;
 }
 
+header .nav-item-logo:hover {
+  text-decoration: underline;
+  color: rgb(93, 98, 98);
+}
 header ul li a:hover {
   color: rgb(93, 98, 98);
   text-decoration: underline;
   transform: scale(200%);
+}
+header.sticky .nav-item-logo:hover {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
 }
 
 header.sticky ul li a:hover {
@@ -40,7 +48,7 @@ header.sticky ul li a:hover {
 header .nav-item-logo {
   color: #000;
   position: relative;
-  transition: 0.6;
+  transition: 0.6s;
   text-decoration: none;
 }
 

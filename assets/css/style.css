@@ -2324,10 +2324,20 @@ header.sticky ul li a {
   color: #fff;
 }
 
+header .nav-item-logo:hover {
+  text-decoration: underline;
+  color: rgb(93, 98, 98);
+}
+
 header ul li a:hover {
   color: rgb(93, 98, 98);
   text-decoration: underline;
   transform: scale(200%);
+}
+
+header.sticky .nav-item-logo:hover {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
 }
 
 header.sticky ul li a:hover {
@@ -2339,7 +2349,7 @@ header.sticky ul li a:hover {
 header .nav-item-logo {
   color: #000;
   position: relative;
-  transition: 0.6;
+  transition: 0.6s;
   text-decoration: none;
 }
 
@@ -2404,7 +2414,8 @@ header ul li a {
   transform: scale(1.05);
 }
 
-.homepage-button {
+.col-md-7 .homepage-button {
+  cursor: auto;
   background: #066f14;
   border-radius: 4px;
   border: none;
@@ -2511,7 +2522,7 @@ header ul li a {
 }
 
 .body {
-  background: #ececec;
+  position: relative;
 }
 
 .homepage-button-one {
@@ -2991,6 +3002,11 @@ header ul li a {
   background-image: url("/assets/css/image/Arrowright.svg");
 }
 
+.feedback:hover::before,
+.feedback:hover::after {
+  cursor: pointer;
+}
+
 /* Subscribe Our */
 .container.subscribe {
   background-color: #dfffe3;
@@ -3052,6 +3068,7 @@ header ul li a {
 }
 
 .followUsGallery img {
+  flex-direction: row;
   padding: 0;
   width: 230px;
   height: 240px;
@@ -3069,11 +3086,19 @@ header ul li a {
   text-align: center;
 }
 
-.instagram-image {
+.row .instagram-image {
+  margin: 0;
+  padding: 0;
+  width: 230px;
+  height: 240px;
   position: relative;
 }
 
-.followUsGallery::after {
+.instagram-image-one:hover::before {
+  cursor: pointer;
+}
+
+.instagram-image-one::before {
   content: "";
   z-index: 100;
   position: absolute;
@@ -3100,6 +3125,10 @@ header ul li a {
   margin-right: 100px;
 }
 
+.footerItem a:hover {
+  cursor: pointer;
+}
+
 .footerItem {
   display: flex;
   flex-direction: column;
@@ -3108,6 +3137,10 @@ header ul li a {
 
 .socialButtons a {
   margin-right: 10px;
+}
+
+.socialButtons a:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

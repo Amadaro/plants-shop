@@ -407,6 +407,11 @@
   background-image: url("/assets/css/image/Arrowright.svg");
 }
 
+.feedback:hover::before,
+.feedback:hover::after {
+  cursor: pointer;
+}
+
 /* Subscribe Our */
 
 .container.subscribe {
@@ -469,6 +474,7 @@
   margin-bottom: 130px;
 }
 .followUsGallery img {
+  flex-direction: row;
   padding: 0;
   width: 230px;
   height: 240px;
@@ -486,11 +492,17 @@
   text-align: center;
 }
 
-.instagram-image {
+.row .instagram-image {
+  margin: 0;
+  padding: 0;
+  width: 230px;
+  height: 240px;
   position: relative;
 }
-
-.followUsGallery::after {
+.instagram-image-one:hover::before {
+  cursor: pointer;
+}
+.instagram-image-one::before {
   content: "";
   z-index: 100;
   position: absolute;
@@ -517,7 +529,9 @@
   width: 300px;
   margin-right: 100px;
 }
-
+.footerItem a:hover {
+  cursor: pointer;
+}
 .footerItem {
   display: flex;
   flex-direction: column;
@@ -525,4 +539,7 @@
 }
 .socialButtons a {
   margin-right: 10px;
+}
+.socialButtons a:hover {
+  cursor: pointer;
 }

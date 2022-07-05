@@ -17,11 +17,15 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="/assets/css/image/logo.png" />
     <title>Plants</title>
   </head>
   <body class="body">
     <header class="container header">
-      <a href="#" class="nav-item-logo">Plant</a>
+      <div class="logo">
+        <a href="#" class="nav-item-logo">Plant</a>
+        <img class="logo-img" src="/assets/css/image/logo.png" alt="logo" />
+      </div>
       <ul class="menu">
         <li>
           <a href="#" class="nav-item nav-item-home">Home</a>
@@ -45,14 +49,7 @@
         </li>
         <li>
           <a href="#" class="nav-item nav-item-button">
-            <button
-              class="button nav-button login-link"
-              data-toggle="modal"
-              data-target="#exampleModal"
-              href="login.html"
-            >
-              Sign Up
-            </button>
+            <button class="button">Sign Up</button>
           </a>
         </li>
       </ul>
@@ -561,41 +558,70 @@
         </div>
       </div>
     </footer>
-
-    <!-- Modal  -->
-    <div
-      class="modal"
-      id="exampleModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
+    <!--MODAL-->
+    <div class="modal-overlay-login"></div>
+    <div class="modal">
+      <div class="modal-login">
+        <form class="modal-login-form">
+          <h2 class="authorization-header">
+            Register<img
+              class="logo-img"
+              src="/assets/css/image/logo.png"
+              alt="logo"
+            />
+          </h2>
+          <form
+            class="login-form"
+            action="https://echo.htmlacademy.ru"
+            method="post"
+          >
+            <p class="modal-description">Login</p>
+            <p>
+              <label class="visually-hidden" for="user-login">Логин</label>
+              <input
+                class="login-icon-user"
+                id="user-login"
+                type="email"
+                name="login"
+                placeholder="email@example.com"
+              />
+            </p>
+            <p class="modal-description">Password</p>
+            <p>
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input
+                class="login-icon-password"
+                id="user-password"
+                type="password"
+                name="password"
+                placeholder="••••••••"
+              />
+            </p>
+            <p class="modal-description">Confirm password</p>
+            <p>
+              <label class="visually-hidden" for="user-password-confirm"
+                >Пароль</label
+              >
+              <input
+                class="login-icon-password-confirm"
+                id="user-password-confirm"
+                type="password"
+                name="password"
+                placeholder="••••••••"
+              />
+            </p>
+            <div class="login-buttons">
+              <button class="button" type="submit">Register</button>
+              <button
+                class="button modal-close modal-close-login"
+                type="button"
+                aria-label="Закрыть"
+              >
+                Close
+              </button>
+            </div>
+          </form>
+        </form>
       </div>
     </div>
     <!-- JS  -->

@@ -4,7 +4,7 @@
   z-index: 1000;
 }
 
-.body .modal-login {
+.body .modal-signUp {
   background-color: #737272cc;
   border-radius: 15px;
   color: rgb(0, 0, 0);
@@ -19,12 +19,12 @@
   padding-top: 1%;
   height: 355px;
 }
-.body .modal-login form {
+.body .modal-signUp form {
   display: flex;
   flex-direction: column;
 }
 
-.body .modal-login .login-buttons {
+.body .modal-signUp .login-buttons {
   display: flex;
   justify-content: space-between;
 }
@@ -38,7 +38,7 @@
   margin-bottom: 0;
   text-align: center;
 }
-.modal-login-form {
+.modal-signUp-form {
   width: auto;
   height: auto;
 }

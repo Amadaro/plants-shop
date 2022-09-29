@@ -31,21 +31,21 @@
           <a href="#" class="nav-item nav-item-home">Home</a>
         </li>
         <li>
-          <a href="#" class="nav-item nav-item-services">About Us </a>
+          <a href="#aboutus" class="nav-item nav-item-services">About Us </a>
         </li>
         <li>
-          <a href="#" class="nav-item nav-item-about"> Services </a>
+          <a href="#services" class="nav-item nav-item-about"> Services </a>
         </li>
         <li>
-          <a href="#" class="nav-item nav-item-blog">Blog</a>
+          <a href="#blog" class="nav-item nav-item-blog">Blog</a>
         </li>
         <li>
-          <a href="#" class="nav-item nav-item-contact"> Contact </a>
+          <a href="#contact" class="nav-item nav-item-contact"> Contact </a>
         </li>
       </ul>
       <ul class="menu-authorization">
         <li>
-          <a href="#" class="nav-item nav-item-login">Login</a>
+          <a href="#" class="nav-item nav-item-login login-link">Login</a>
         </li>
         <li>
           <a href="#" class="nav-item nav-item-button register-link">
@@ -143,6 +143,7 @@
           />
         </div>
       </div>
+      <a name="aboutus"></a>
     </div>
 
     <div class="container about">
@@ -172,9 +173,13 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
             delectus, reiciendis saepe sunt!
           </p>
+
           <button class="button button-readmore">Read More</button>
         </div>
       </div>
+    </div>
+    <div class="link-services">
+      <a name="services"> </a>
     </div>
 
     <div class="container products">
@@ -560,8 +565,8 @@
     </footer>
     <!--MODAL-->
     <div class="modal-overlay-login"></div>
-    <section class="modal modal-frame modal-login">
-      <form class="modal-login-form">
+    <section class="modal modal-frame modal-signUp">
+      <form class="modal-signUp-form">
         <h2 class="authorization-header">
           Register<img
             class="logo-img"
@@ -642,6 +647,7 @@
         header.classList.toggle("sticky", window.scrollY > 0);
       });
     </script>
-    <script src="/assets/js/popup.js"></script>
+    <script src="/assets/js/popupsignup.js"></script>
+    <script src="/assets/js/popuplogin.js"></script>
   </body>
 </html>
